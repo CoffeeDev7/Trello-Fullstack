@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    background-color: #f6f7fb;
+    background-color: #efefef;
 }
 
 button[type="submit"],

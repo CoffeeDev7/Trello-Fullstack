@@ -7,9 +7,15 @@ import Link from "next/link";
 export default async function Header() {
   const session = await getServerSession(authOptions);
   return (
-    <header className="bg-gray-200 p-4 px-8">
+    <header style={{ backgroundColor: "white" }} className=" p-4 px-8">
       <div className="flex justify-between items-center">
-        <Link href="/" className="logo">Trello</Link>
+      <Link 
+  href="/" 
+  className="logo text-3xl font-bold text-blue-600 italic tracking-wide font-[cursive]"
+>
+  Trello Clone
+</Link>
+
         <div>
           {session && (
             <>
